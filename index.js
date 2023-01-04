@@ -16,7 +16,7 @@ exports.handler = async function (event, context) {
     Message: {
       Body: {
         Text: { Data: event['MSG']},
-        Html: { Data: '<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Email Alert From Softac</title><body>'+event["MSG"]+'</head></html>' }
+        Html: { Data: '<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Email Alert From AWS</title><body>'+event["MSG"]+'</head></html>' }
       },
 
       Subject: { Data: event['SUBJECT'] },
